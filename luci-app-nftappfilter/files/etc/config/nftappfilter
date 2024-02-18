@@ -1,3 +1,0 @@
-config nftappfilter 'settings'
-option enabled '1'
-option rule_file '/usr/share/nftappfilter/appblockrule.config'
