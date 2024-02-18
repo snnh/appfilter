@@ -1,1 +1,1 @@
-# luci-app-nftappfilter
+# appfilter

@@ -1,0 +1,21 @@
+# 腾讯视频
+||v.qq.com^
+||video.qq.com^
+||btrace.qq.com^
+||weishi.qq.com^
+# douyin
+/douyin.*/
+||tiktok.com^
+# 快手
+/kuaishou.*/
+/ksyuncdn.com/
+||gifshow.com^
+||yximgs.com^
+/*kwaicdn*/
+/*kwimgs*/
+/*/ksc*/
+# xigua
+/*ixigua*/
+/*snsdk*/
+/*xg-p.ixigua*/
+/*bdxigua*/
