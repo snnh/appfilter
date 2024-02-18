@@ -1,0 +1,49 @@
+<%#
+LuCI - Lua Configuration Interface
+Copyright 2008 Steven Barth <steven@midlink.org>
+Copyright 2008 Jo-Philipp Wich <jow@openwrt.org>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+$Id$
+
+-%>
+
+<%+header%>
+
+<h2><%:NFT App Filter%></h2>
+
+<fieldset class="cbi-section">
+    <legend><%:Rule Management%></legend>
+
+    <div class="cbi-section-node">
+        <div class="cbi-value">
+            <label class="cbi-value-title" for="txtNewRule"><%:New Rule%>:</label>
+            <div class="cbi-value-field">
+                <input type="text" id="txtNewRule" name="new_rule" />
+            </div>
+        </div>
+
+        <div class="cbi-value cbi-value-last">
+            <label class="cbi-value-title"></label>
+            <div class="cbi-value-field">
+                <input type="button" id="btnAddRule" class="cbi-button cbi-button-add" value="<%:Add%>" />
+            </div>
+        </div>
+    </div>
+
+    <div class="cbi-section-node">
+        <div class="cbi-value">
+            <label class="cbi-value-title"></label>
+            <div class="cbi-value-field">
+                <input type="button" id="btnReloadRules" class="cbi-button cbi-button-reload" value="<%:Reload Rules%>" />
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<%+footer%>

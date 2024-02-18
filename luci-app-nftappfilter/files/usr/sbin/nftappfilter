@@ -1,0 +1,32 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# nftappfilter - Manage nftables rules for website blocking
+
+COMMAND="$1"
+RULE_FILE="/usr/share/nftappfilter/appblockrule.config"
+
+load_rules() {
+    nft -f "$RULE_FILE"
+}
+
+flush_rules() {
+    nft flush ruleset
+}
+
+case "$COMMAND" in
+    start)
+        load_rules
+        ;;
+    stop)
+        flush_rules
+        ;;
+    reload)
+        flush_rules
+        load_rules
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|reload}"
+        exit 1
+        ;;
+esac
